@@ -1,3 +1,12 @@
+/**
+ * FAT32 File System Utility
+ * 
+ * This utility performs recovery operations on FAT32 file systems including:
+ * - Displaying file system information
+ * - Listing root directory contents
+ * - Recovering deleted files (both contiguous and non-contiguous)
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
