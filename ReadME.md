@@ -1,10 +1,9 @@
 <h1><img width="500" alt="FatRec Banner" src="/doc/fat-rec-32-banner.png"></h1>
 
+[![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.cppreference.com/w/c) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # FatRec32 💾
-
-> Recovery tool written in C for FAT32 disk file recovery with cryptographic validation ✨
-
-[![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.cppreference.com/w/c)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Recovery tool written in C for FAT32 disk file recovery with cryptographic validation ✨
 
 ## 🔍 Overview
 
