@@ -97,11 +97,11 @@ Contributions to FatRec32 are welcome! Whether it's bug reports, feature request
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### ToDo
-[ ] Write test cases
-[ ] Write bash script for easy installation to /bin
-[ ] Write fat32 test disks with edge cases
-[ ] Write bash script to run on test disks
-[ ] Upload test disks 
+- [ ] Write test cases
+- [ ] Write bash script for easy installation to /bin
+- [ ] Write fat32 test disks with edge cases
+- [ ] Write bash script to run on test disks
+- [ ] Upload test disks 
 
 
 ## 🙏 Acknowledgments
