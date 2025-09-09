@@ -11,10 +11,10 @@ FatRec32 is a high-performance recovery tool designed to retrieve deleted files 
 
 ## ✨ Features
 
-- **🚀 High Recovery Rate**: Recovers up to 95% of deleted FAT32 data
-- **🔐 Cryptographic Validation**: Uses OpenSSL to verify data
-- **⚡ Performance Optimized**: Memory-mapping techniques for faster recovery
-- **🛠️ Versatile Recovery Options**:
+- ** High Recovery Rate**: Recovers up to 95% of deleted FAT32 data
+- ** Cryptographic Validation**: Uses OpenSSL to verify data
+- ** Performance Optimized**: Memory-mapping techniques for faster recovery
+- ** Versatile Recovery Options**:
   - Recover specific files with name matching
   - Bulk recovery of all deleted files
   - Special handling for non-contiguous files
