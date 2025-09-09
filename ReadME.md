@@ -3,7 +3,7 @@
 [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.cppreference.com/w/c) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # FatRec32 💾
-Recovery tool written in C for FAT32 disk file recovery with cryptographic validation ✨
+Recovery tool written in C for FAT32 disk file recovery with cryptographic validation.
 
 ## 🔍 Overview
 
@@ -77,32 +77,24 @@ Usage: fatrec32 disk <options>
 
 FatRec32 works by scanning the FAT32 filesystem at the byte level, identifying deleted file entries and reconstructing file contents based on cluster chain analysis. 
 
-- **📊 Memory-Mapped I/O**: Directly maps disk sectors to memory for faster access
-- **🔗 Cluster Chain Recovery**: Advanced algorithms to reconstruct fragmented files
-- **🔍 File Carving Techniques**: Signature-based recovery for specific file types
-- **🔐 Cryptographic Validation**: SHA1 hashing to verify file post-recovery
+- **Memory-Mapped I/O**: Directly maps disk sectors to memory for faster access
+- **Cluster Chain Recovery**: Advanced algorithms to reconstruct fragmented files
+- **File Carving Techniques**: Signature-based recovery for specific file types
+- **Cryptographic Validation**: SHA1 hashing to verify file post-recovery
 
 ## 👥 Contributing
 
 Contributions to FatRec32 are welcome! Whether it's bug reports, feature requests, or code contributions, please feel free to reach out or submit a pull request.
 
 1. Raise an issue + Fork the repository ⑂
-2. Create your feature branch (`git checkout -b feature/amazing-feature`) 🌿
-3. Commit your changes (`git commit -m 'Add some amazing feature'`) ✅
-4. Push to the branch (`git push origin feature/amazing-feature`) 🚀
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request 🎉
 
 ## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-### ToDo
-- [ ] Write test cases
-- [ ] Write bash script for easy installation to /bin
-- [ ] Write fat32 test disks with edge cases
-- [ ] Write bash script to run on test disks
-- [ ] Upload test disks 
-
 
 ## 🙏 Acknowledgments
 

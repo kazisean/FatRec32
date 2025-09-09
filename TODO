@@ -1,0 +1,6 @@
+### ToDo
+- [ ] Write test cases
+- [ ] Write bash script for easy installation to /bin
+- [ ] Write fat32 test disks with edge cases
+- [ ] Write bash script to run on test disks
+- [ ] Upload test disks 
