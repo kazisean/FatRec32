@@ -2,19 +2,11 @@
 
 [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.cppreference.com/w/c) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# FatRec32 💾
-Recovery tool written in C for FAT32 disk file recovery with cryptographic validation.
+# 💾 FatRec32
+FatRec32 is a high-performance file recovery tool designed to retrieve deleted files from FAT32 file systems.
 
-## 🔍 Overview
-
-FatRec32 is a high-performance recovery tool designed to retrieve deleted files from FAT32 file systems. 
-
-## ✨ Features
-
-- **High Recovery Rate**: Recovers up to 95% of deleted FAT32 data
-- **Cryptographic Validation**: Uses OpenSSL to verify data
-- **Performance Optimized**: Memory-mapping techniques for faster recovery
-- **Versatile Recovery Options**:
+## Features
+**Versatile Recovery Options** :
   - Recover specific files with name matching
   - Bulk recovery of all deleted files
   - Special handling for non-contiguous files
@@ -39,7 +31,7 @@ cd fatrec32
 make
 ```
 
-## 🚀 Usage
+## Usage
 
 ```
 Usage: fatrec32 disk <options>
@@ -51,7 +43,7 @@ Usage: fatrec32 disk <options>
   -all                   Recover all deleted files.
 ```
 
-### 📝 Examples
+### Examples
 
 ```bash
 # Print information about the file system
@@ -73,7 +65,7 @@ Usage: fatrec32 disk <options>
 ./fatrec32 fat32.disk -ra backup.zip
 ```
 
-## 🔧 Technical Details
+## Technical Details
 
 FatRec32 works by scanning the FAT32 filesystem at the byte level, identifying deleted file entries and reconstructing file contents based on cluster chain analysis. 
 
@@ -82,22 +74,16 @@ FatRec32 works by scanning the FAT32 filesystem at the byte level, identifying d
 - **File Carving Techniques**: Signature-based recovery for specific file types
 - **Cryptographic Validation**: SHA1 hashing to verify file post-recovery
 
-## 👥 Contributing
+## Contributing
 
-Contributions to FatRec32 are welcome! Whether it's bug reports, feature requests, or code contributions, please feel free to reach out or submit a pull request.
+Contributions to FatRec32 are welcome! Whether it's bug reports, feature requests, or code contributions, please feel open an issue and submit a pull request.
 
 1. Raise an issue + Fork the repository ⑂
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+3. Commit your changes (`git commit -m 'Added this amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request 🎉
 
-## 📜 License
+## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- FAT32 file system specification
-- OpenSSL project for cryptographic libraries
-- Various file recovery research papers and techniques
+This project is licensed under the MIT License.
