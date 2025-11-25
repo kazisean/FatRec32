@@ -6,7 +6,7 @@ LDFLAGS=-lcrypto
 all: fatrec32
 
 fatrec32: fatrec32.o
-	$(CC) $(LDFLAGS) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 fatrec32.o: fatrec32.c 
 	$(CC) $(CFLAGS) -c $<
