@@ -3,7 +3,8 @@
 # compile the program
 # make
 
-# Create output directory if it doesn't exist
+# Clean up previous output and create directory
+rm -rf testfiles/output
 mkdir -p testfiles/output
 
 # Define colors
