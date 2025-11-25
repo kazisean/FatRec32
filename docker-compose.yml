@@ -1,0 +1,9 @@
+services:
+  fatrec32:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+    stdin_open: true
