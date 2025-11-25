@@ -44,15 +44,15 @@ run_test "1.2" "./fatrec32 -i"
 run_test "1.3" "./fatrec32 -l"
 
 # Test 1.4: Only -l flag (insufficient arguments)
-run_test "1.3" "./fatrec32 -r"
+run_test "1.4" "./fatrec32 -r"
 
 # Test 1.5: Only -l flag (insufficient arguments)
-run_test "1.3" "./fatrec32 -R"
+run_test "1.5" "./fatrec32 -R"
 
 # Test 1.6: Only -l flag (insufficient arguments)
-run_test "1.3" "./fatrec32 -ra"
+run_test "1.6" "./fatrec32 -ra"
 
 # Test 1.7: Only -l flag (insufficient arguments)
-run_test "1.3" "./fatrec32 -all"
+run_test "1.7" "./fatrec32 -all"
 
 # TODO: ADD MORE TEST CASES FOR INVALID INPUT FORMAT
