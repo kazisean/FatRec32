@@ -2,3 +2,5 @@
 .DS_Store
 fatrec32
 fatrec32.o
+
+testfiles/output/
