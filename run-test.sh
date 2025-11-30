@@ -33,6 +33,19 @@ run_test() {
     fi
 }
 
+# Checksum verification
+EXPECTED_CHECKSUM="aee1ff64579ea30094ddf08a284dfed7e3e35af0"
+ACTUAL_CHECKSUM=$(shasum disks/fat32.disk | awk '{print $1}')
+
+if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]; then
+    echo -e "${RED}Checksum verification failed for disks/fat32.disk${NC}"
+    echo "Expected: $EXPECTED_CHECKSUM"
+    echo "Actual:   $ACTUAL_CHECKSUM"
+    exit 1
+else
+    echo -e "${GREEN}Checksum verification passed for disks/fat32.disk${NC}"
+fi
+
 # --- Test cases invalid prompt ---
 
 # Test 1.1: No arguments
@@ -55,5 +68,8 @@ run_test "1.6" "./fatrec32 -ra"
 
 # Test 1.7: Only -l flag (insufficient arguments)
 run_test "1.7" "./fatrec32 -all"
+
+# Test 2.1: System Information
+run_test "2.1" "./fatrec32 disks/fat32.disk -i"
 
 # TODO: ADD MORE TEST CASES FOR INVALID INPUT FORMAT
