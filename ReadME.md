@@ -47,22 +47,22 @@ Usage: fatrec32 disk <options>
 
 ```bash
 # Print information about the file system
-./fatrec32 fat32.disk -i
+./fatrec32 sample.disk -i
 
 # List files in the root directory
-./fatrec32 fat32.disk -l
+./fatrec32 sample.disk -l
 
 # Recover a specific deleted file
-./fatrec32 fat32.disk -r document.pdf
+./fatrec32 sample.disk -r document.pdf
 
 # Recover a file and verify its integrity with SHA1
-./fatrec32 fat32.disk -r document.pdf -s 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+./fatrec32 sample.disk -r document.pdf -s 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
 
 # Recover all deleted files
-./fatrec32 fat32.disk -all
+./fatrec32 sample.disk -all
 
-# Recover all instances of a specific filename
-./fatrec32 fat32.disk -ra backup.zip
+# Recover all instances of a specific filename (if there were multiple)
+./fatrec32 sample.disk -ra file.txt
 ```
 
 ## Technical Details
