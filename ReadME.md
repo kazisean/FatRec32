@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/kazisean/FatRec32/actions/workflows/tests.yml/badge.svg)](https://github.com/kazisean/FatRec32/actions/workflows/tests.yml) [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.cppreference.com/w/c) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# 💾 FatRec32
+# FatRec32
 FatRec32 is a high-performance file recovery tool designed to retrieve deleted files from FAT32 file systems.
 
 ## Features
@@ -11,7 +11,7 @@ FatRec32 is a high-performance file recovery tool designed to retrieve deleted f
   - Bulk recovery of all deleted files
   - SHA1 validation for recovered files
 
-## 📥 Installation
+## Installation
 
 ### Prerequisites
 - **Linux:** `sudo apt-get install build-essential libssl-dev`
