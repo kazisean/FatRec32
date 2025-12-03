@@ -1,33 +1,26 @@
 <h1><img width="500" alt="FatRec Banner" src="/doc/fat-rec-32-banner.png"></h1>
 
-[![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.cppreference.com/w/c) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://github.com/kazisean/FatRec32/actions/workflows/tests.yml/badge.svg)](https://github.com/kazisean/FatRec32/actions/workflows/tests.yml) [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.cppreference.com/w/c) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # 💾 FatRec32
 FatRec32 is a high-performance file recovery tool designed to retrieve deleted files from FAT32 file systems.
 
 ## Features
 **Versatile Recovery Options** :
-  - Recover specific files with name matching
+  - Recover specific files
   - Bulk recovery of all deleted files
-  - Special handling for non-contiguous files
   - SHA1 validation for recovered files
 
 ## 📥 Installation
 
 ### Prerequisites
+- **Linux:** `sudo apt-get install build-essential libssl-dev`
+- **macOS:** `xcode-select --install` (OpenSSL is typically included)
 
-- GCC or compatible C compiler
-- OpenSSL development libraries
-- Make
-
-### Build from Source
-
+### Build
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/fatrec32.git
 cd fatrec32
-
-# Build using make
 make
 ```
 
@@ -76,13 +69,7 @@ FatRec32 works by scanning the FAT32 filesystem at the byte level, identifying d
 
 ## Contributing
 
-Contributions to FatRec32 are welcome! Whether it's bug reports, feature requests, or code contributions, please feel open an issue and submit a pull request.
-
-1. Raise an issue + Fork the repository ⑂
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Added this amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request 🎉
+Contributions to FatRec32 are welcome! Whether it's bug reports, feature requests, or code contributions, please feel open an issue.
 
 ## License
 
