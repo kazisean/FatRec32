@@ -14,16 +14,8 @@ jobs:
       with:
         lfs: true
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libssl-dev
+    - name: Build Docker image
+      run: docker-compose build
 
-    - name: Compile
-      run: make
-
-    - name: Make script executable
-      run: chmod +x run-test.sh
-
-    - name: Run Tests
-      run: ./run-test.sh
+    - name: Run Tests in Docker
+      run: docker-compose run --rm fatrec32 bash -c "make && chmod +x run-test.sh && ./run-test.sh"

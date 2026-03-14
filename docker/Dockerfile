@@ -5,6 +5,7 @@ WORKDIR /app
 # update
 RUN apt-get update && apt-get install -y \
     make \
+    libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # keep the container running
