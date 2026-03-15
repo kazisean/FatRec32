@@ -15,7 +15,7 @@ jobs:
         lfs: true
 
     - name: Build Docker image
-      run: docker-compose build
+      run: docker compose build
 
     - name: Run Tests in Docker
-      run: docker-compose run --rm fatrec32 bash -c "make && chmod +x run-test.sh && ./run-test.sh"
+      run: docker compose run --rm fatrec32 bash -c "make && chmod +x run-test.sh && ./run-test.sh"
